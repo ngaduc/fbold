@@ -7,10 +7,10 @@
   "version": "0.1",
   "homepage_url": "https://fb.com/ngaduc.byduc",
   "icons": {
-    "16": "16.png",
-    "32": "32.png",
-    "48": "48.png",
-    "128": "128.png"
+    "16": "assets/ic/16.png",
+    "32": "assets/ic/32.png",
+    "48": "assets/ic/48.png",
+    "128": "assets/ic/128.png"
   },
   "permissions": [
     "webRequest",
@@ -25,16 +25,16 @@
   },
   "content_scripts": [{
     "matches": ["*://*.facebook.com/*"],
-    "css": ["style.css"],
+    "css": ["css/main.css"],
     "run_at": "document_start"
   }],
   "browser_action": {
     "default_icon": {
-      "16": "16.png",
-      "19": "19.png",
-      "32": "32.png",
-      "38": "38.png",
-      "48": "48.png"
+      "16": "assets/ic/16.png",
+      "19": "assets/ic/19.png",
+      "32": "assets/ic/32.png",
+      "38": "assets/ic/38.png",
+      "48": "assets/ic/48.png"
     },
     "default_title": "FBOld",
     "default_popup": "./home.html"
