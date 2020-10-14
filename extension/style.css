@@ -1,0 +1,9 @@
+.fbPageBanner.uiBoxYellow { display:none !important; }
+.fbChatSidebar>div._5qqe { height:43px !important; }
+a[href="https://www.facebook.com/help/211644178877843"]:after {
+  content: "Vì khi dùng extension thì fb nghĩ rằng bạn đang dùng trình duyệt cũ, nên fb sẽ không cho bạn thực hiện cuộc gọi video. Để chữa cháy bạn qua messenger.com để gọi điện video nhé!.";
+  display: block;
+  color: black;
+  border: 2px solid red;
+  padding: 3px;
+}

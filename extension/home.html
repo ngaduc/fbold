@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Quicksand';
+      body, html { 
+        margin:0; 
+        padding: 0; 
+        width:310px; 
+        height:530px; 
+        overflow-x:hidden; 
+        overflow-y:auto; 
+        font-family: Quicksand
+      }
+      body { 
+        background:#202020 url('triangles.png'); 
+        padding:0; 
+        font-size:100%;  
+        color:#fff;
+        text-align: center;
+      }
+      #enabled, #disabled { 
+        margin:5px; 
+        width:95%;
+        cursor: pointer; 
+      }
+      div.checked { 
+        border:1px solid #333; 
+      }
+      #msg { 
+        font-size:90%; 
+        font-style:italic; 
+      }
+      p { 
+        text-align:center; 
+      }
+      a {
+        color: #fff;
+      }
+      a.hover { 
+        cursor:pointer; 
+      }
+      a.hover:hover {
+        outline:1px solid #666;
+        border-radius:5px;
+      }
+      #reload {
+        width: 100%;
+        height:30px;
+        border: none;
+        outline: none;
+        background: rgb(150,150,150);
+        cursor: pointer;
+        transition: 0.2s
+      }
+      #reload:hover {
+        background: rgb(180,180,180);
+      }
+    </style>
+    <script src="mainsc.js"></script>
+  </head>
+<body>
+  <div style="margin: auto;width: fit-content">
+    <img src="head.png">
+  </div>
+  <div>
+    <h3 style="margin: 0px">FBOld</h3>
+    <a>Giao diện cũ cho Facebook</a>
+    <div id="enabled" class="checked"><input type="radio" checked="checked" name="enabled" value="true"> Giao diện Cũ</div>
+    <div id="disabled" ><input type="radio" name="enabled" value="false"> Giao diện Mới</div>
+    <div>
+      <button id="reload">Lưu lại (Refresh)</button>
+    </div>
+    <div id="msg"><b>Lưu ý:</b> Khi bạn khởi động lại trình duyệt thì nó sẽ tự chuyển về giao diện cũ</div>
+  </div>
+    <div style="font-size:90%;margin-top:5px;border-top:1px solid #666;">Phiên bản hiện tại: 0.1</div>
+    <div style="font-size:90%;margin-top:5px;border-top:1px solid #666;">
+      <div style="margin: auto;width: fit-content;text-align: center;">
+        <img style="width: 60%" src="chino.png"><br>
+        by <a href="https://fb.com/ngaduc.byduc" target="_blank" style="font-weight:bolder;">Nguyen Anh Duc </a><span style="font-size: 10px">(chino-chann)</span><br>
+        <a>Source code: <a style="font-weight:bolder;" target="_blank" href="https://github.com/ngaduc/fbold">Github</a>
+      </div>
+    </div>
+</body>
+</html>
